@@ -14,7 +14,7 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRend
 
 		/* Creates a sphere and texturemaps the projection onto the sphere */ 
 		var sphere = new THREE.Mesh(
-			new THREE.SphereGeometry(40, 40, 40),
+			new THREE.SphereGeometry(120, 40, 40),
 			new THREE.MeshBasicMaterial({
 				map: THREE.ImageUtils.loadTexture("./upload/"+imageFile)
 			})
@@ -25,7 +25,7 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRend
 
 		var cube = new THREE.Mesh( 
 				   new THREE.BoxGeometry( 50, 50, 50 ), 
-				   new THREE.MeshBasicMaterial( {color: 0x0000ff, transparent:true} ) );
+				   new THREE.MeshBasicMaterial( {color: 0x0000ff} ) );
 		cube.position.x = 0.5;
 		scene.add( cube );
 
