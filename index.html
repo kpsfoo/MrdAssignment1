@@ -1,0 +1,22 @@
+<!doctype html><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+ 
+<title>Panorama</title>
+
+<script src="./assets/three.js"></script>
+<script src="./assets/threestrap.js"></script>
+<script src="./assets/argon.js"></script>
+<script src="./assets/argon-three.js"></script>
+
+<body>
+This code uses takes an equirectangular projection panoramic image to create an Argon3 panorama. 
+  The input image should have a 2-1 aspect ratio and should not be greater than 4000x2000 pixels. 
+  This image is texture mapped onto the surface of a sphere surround the user/camera. 
+  This code can be expanded to include other images and functionality for a fuller Argon3 experience. 
+  Go to the site: http://ael.gatech.edu/argon for more details.
+</body>
+<script>
+  var imageFile = "antwerp_pano.jpg";
+</script>
+<script src="./app.js"></script>
+</html>
