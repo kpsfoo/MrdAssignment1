@@ -26,7 +26,7 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRend
 		var cube = new THREE.Mesh( 
 				   new THREE.BoxGeometry( 50, 50, 50 ), 
 				   new THREE.MeshBasicMaterial( {color: 0x0000ff} ) );
-		cube.position.y = 150;
+		cube.position.y = 0;
 		scene.add( cube );
 
 		var controls = new THREE.OrbitControls(camera);
