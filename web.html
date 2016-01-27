@@ -6,11 +6,13 @@
 	<style>
 		body { margin: 0; overflow: hidden; background-color: #000; }
 		.tm  { position: absolute; top: 10px; right: 10px;}
+		button {
+			width: 140px; 
+			height: 80px;
+		}
 		#toggleButton {
 			position: absolute;
 			font-size: 20px; 
-			width: 150px; 
-			height: 100px;
 			margin: 20px;
 			color: white;
 			background-color: rgba(0,0,0,0.7);
@@ -19,10 +21,8 @@
 		#colorRedButton {
 			position: absolute;
 			font-size: 20px; 
-			width: 150px; 
-			height: 100px;
 			margin: 20px;
-			margin-top: 140px;
+			margin-top: 120px;
 			color: white;
 			background-color: rgba(0,0,0,0.7);
 			border-radius: 10px;
@@ -30,10 +30,8 @@
 		#colorGreenButton {
 			position: absolute;
 			font-size: 20px; 
-			width: 150px; 
-			height: 100px;
 			margin: 20px;
-			margin-top: 280px;
+			margin-top: 220px;
 			color: white;
 			background-color: rgba(0,0,0,0.7);
 			border-radius: 10px;
@@ -41,10 +39,8 @@
 		#colorBlueButton {
 			position: absolute;
 			font-size: 20px; 
-			width: 150px; 
-			height: 100px;
 			margin: 20px;
-			margin-top: 420px;
+			margin-top: 320px;
 			color: white;
 			background-color: rgba(0,0,0,0.7);
 			border-radius: 10px;
@@ -52,11 +48,9 @@
 
 		#increaseOpacity {
 			position: absolute;
-			font-size: 20px; 
-			width: 150px; 
-			height: 100px;
+			font-size: 20px;
 			margin: 20px;
-			margin-top: 560px;
+			margin-top: 420px;
 			color: white;
 			background-color: rgba(0,0,0,0.7);
 			border-radius: 10px;
@@ -65,10 +59,18 @@
 		#decreaseOpacity {
 			position: absolute;
 			font-size: 20px; 
-			width: 150px; 
-			height: 100px;
 			margin: 20px;
-			margin-top: 700px;
+			margin-top: 520px;
+			color: white;
+			background-color: rgba(0,0,0,0.7);
+			border-radius: 10px;
+		}
+
+		#toggleAutoRotate {
+			position: absolute;
+			font-size: 20px; 
+			margin: 20px;
+			margin-top: 620px;
 			color: white;
 			background-color: rgba(0,0,0,0.7);
 			border-radius: 10px;
@@ -86,6 +88,7 @@
 			<button id="colorBlueButton" onclick="onClickColorBlue()">Blue</button>
 			<button id="increaseOpacity" onclick="onClickIncreaseOpacity()">+ Opacity</button>
 			<button id="decreaseOpacity" onclick="onClickDecreaseOpacity()">- Opacity</button>
+			<button id="toggleAutoRotate" onclick="onClickToggleAutoRotate()">Toggle Auto Rotate</button>
 		</div>
 
 		<div id="sphere" ondblclick="doubleTap()">	

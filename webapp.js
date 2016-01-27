@@ -90,3 +90,7 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRend
 				cube.material.opacity -= 0.2;
 			}
 		}
+
+		function onClickToggleAutoRotate() {
+			controls.autoRotate = !(controls.autoRotate);
+		}
