@@ -54,3 +54,23 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRend
 		
 		
 		window.addEventListener( 'resize', onWindowResize, false );
+
+		function onClickToggleCube() {
+			if(cube.visible === true) {
+				cube.visible = false;
+			} else {
+				cube.visible = true;
+			}
+		}
+
+		function onClickColorRed() {
+			cube.material.color.setHex(0xff0000);
+		}
+
+		function onClickColorGreen() {
+			cube.material.color.setHex(0x00ff00);
+		}
+
+		function onClickColorBlue() {
+			cube.material.color.setHex(0x0000ff);
+		}
