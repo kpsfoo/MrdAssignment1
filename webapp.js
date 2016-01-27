@@ -24,8 +24,8 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRend
 		
 
 		var cube = new THREE.Mesh( 
-				   new THREE.CubeGeometry( 50, 50, 50 ), 
-				   new THREE.MeshNormalMaterial() );
+				   new THREE.BoxGeometry( 50, 50, 50 ), 
+				   new THREE.MeshBasicMaterial( {color: 0x0000ff} ) );
 		cube.position.y = 150;
 		scene.add( cube );
 
