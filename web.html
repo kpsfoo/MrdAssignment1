@@ -50,16 +50,42 @@
 			border-radius: 10px;
 		}
 
+		#increaseOpacity {
+			position: absolute;
+			font-size: 20px; 
+			width: 150px; 
+			height: 100px;
+			margin: 20px;
+			margin-top: 420px;
+			color: white;
+			background-color: rgba(0,0,0,0.7);
+			border-radius: 10px;
+		}
+
+		#decreaseOpacity {
+			position: absolute;
+			font-size: 20px; 
+			width: 150px; 
+			height: 100px;
+			margin: 20px;
+			margin-top: 560px;
+			color: white;
+			background-color: rgba(0,0,0,0.7);
+			border-radius: 10px;
+		}
+
 
     </style>	
 </head>
 <body>
 	<div class="container">
 		<div id="custom-controls">
-			<button id="toggleButton"onclick="onClickToggleCube()">Toggle Cube</button>
-			<button id="colorRedButton"onclick="onClickColorRed()">Red</button>
-			<button id="colorGreenButton"onclick="onClickColorGreen()">Green</button>
-			<button id="colorBlueButton"onclick="onClickColorBlue()">Blue</button>
+			<button id="toggleButton" onclick="onClickToggleCube()">Toggle Cube</button>
+			<button id="colorRedButton" onclick="onClickColorRed()">Red</button>
+			<button id="colorGreenButton" onclick="onClickColorGreen()">Green</button>
+			<button id="colorBlueButton" onclick="onClickColorBlue()">Blue</button>
+			<button id="increaseOpacity" onclick="onClickIncreaseOpacity()">+ Opacity</button>
+			<button id="decreaseOpacity" onclick="onClickDecreaseOpacity()">- Opacity</button>
 		</div>
 
 		<div id="sphere" ondblclick="doubleTap()">	

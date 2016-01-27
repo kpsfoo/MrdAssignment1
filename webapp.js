@@ -74,3 +74,19 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRend
 		function onClickColorBlue() {
 			cube.material.color.setHex(0x0000ff);
 		}
+
+		function onClickIncreaseOpacity() {
+			if(cube.material.opacity >= 1.0){
+				cube.material.opacity = 1.0;
+			} else {
+				cube.material.opacity += 0.2;	
+			}
+		}
+
+		function onClickDecreaseOpacity() {
+			if(cube.material.opacity <= 00) {
+				cube.material.opacity = 1.0;
+			} else {
+				cube.material.opacity -= 0.2;
+			}
+		}
