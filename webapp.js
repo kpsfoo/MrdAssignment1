@@ -14,7 +14,7 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRend
 
 		/* Creates a sphere and texturemaps the projection onto the sphere */ 
 		var sphere = new THREE.Mesh(
-			new THREE.SphereGeometry(120, 40, 40),
+			new THREE.SphereGeometry(40, 40, 40),
 			new THREE.MeshBasicMaterial({
 				map: THREE.ImageUtils.loadTexture("./upload/"+imageFile)
 			})
