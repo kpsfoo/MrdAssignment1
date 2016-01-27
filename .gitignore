@@ -1,0 +1,9 @@
+#ignore sublime text files
+MrdAssignment1.sublime*
+
+#ignore .DS_Store files on Macs
+*.DS_Store
+
+# track these files, if they exist
+!.gitignore
+!.editorconfig
