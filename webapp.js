@@ -9,7 +9,7 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRend
 		var webglEl = document.getElementById('sphere');	
 		var scene = new THREE.Scene();
 		var camera = new THREE.PerspectiveCamera(100, width / height, 1, 1000);
-		camera.position.x = 0.1;
+		camera.position.x = 10;
 
 
 		/* Creates a sphere and texturemaps the projection onto the sphere */ 
@@ -24,8 +24,10 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRend
 		
 
 		var cube = new THREE.Mesh( 
-				   new THREE.BoxGeometry( 50, 50, 50 ), 
-				   new THREE.MeshBasicMaterial( {color: 0x0000ff} ) );
+				   new THREE.BoxGeometry( 10, 10, 10 ), 
+				   new THREE.MeshBasicMaterial( {color: 0x0000ff, opacity: 0.8, transparent: true} ) );
+		cube.position.x = 10;
+		cube.position.z = -10;
 		scene.add( cube );
 
 		var controls = new THREE.OrbitControls(camera);
