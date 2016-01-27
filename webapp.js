@@ -27,7 +27,7 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRend
 				   new THREE.CubeGeometry( 200, 200, 200 ), 
 				   new THREE.MeshNormalMaterial() );
 		cube.position.y = 150;
-		scene.addObject( cube );
+		scene.add( cube );
 
 		var controls = new THREE.OrbitControls(camera);
 		controls.noPan = true;
