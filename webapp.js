@@ -75,6 +75,10 @@ var renderer = Detector.webgl ? new THREE.WebGLRenderer() : new THREE.CanvasRend
 			cube.material.color.setHex(0x0000ff);
 		}
 
+		function onClickColorReflective() {
+			//Add code to make the cube reflective with cubemapped environment
+		}
+
 		function onClickIncreaseOpacity() {
 			if(cube.material.opacity >= 1.0){
 				cube.material.opacity = 1.0;
